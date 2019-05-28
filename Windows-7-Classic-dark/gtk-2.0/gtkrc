@@ -1,0 +1,767 @@
+gtk-color-scheme = "rgb0: #000000"
+gtk-color-scheme = "rgb19: #131313"
+gtk-color-scheme = "rgb30: #1E1E1E"
+gtk-color-scheme = "rgb50: #323232"
+gtk-color-scheme = "rgb64: #404040"
+gtk-color-scheme = "rgb96: #606060"
+gtk-color-scheme = "rgb128: #808080"
+gtk-color-scheme = "rgb142: #8E8E8E"
+gtk-color-scheme = "rgb192: #C0C0C0"
+gtk-color-scheme = "rgb222: #DEDEDE"
+gtk-color-scheme = "rgb255: #FFFFFF"
+gtk-color-scheme = "link_color: #55AAFF"
+gtk-color-scheme = "visited_link_color: #C855FF"
+gtk-color-scheme = "selected_text_fg_color: #FFFFFF"
+gtk-color-scheme = "selected_text_bg_color: #323296"
+gtk-color-scheme = "bg_normal: #1E1E1E"
+gtk-color-scheme = "bg_active: #1E1E1E"
+gtk-color-scheme = "bg_prelight: #1E1E1E"
+gtk-color-scheme = "bg_selected: #404040"
+gtk-color-scheme = "bg_insensitive: #1E1E1E"
+gtk-color-scheme = "fg_normal: #C0C0C0"
+gtk-color-scheme = "fg_active: #C0C0C0"
+gtk-color-scheme = "fg_prelight: #DEDEDE"
+gtk-color-scheme = "fg_selected: #DEDEDE"
+gtk-color-scheme = "fg_insensitive: #808080"
+gtk-color-scheme = "text_normal: #C0C0C0"
+gtk-color-scheme = "text_active: #DEDEDE"
+gtk-color-scheme = "text_prelight: #DEDEDE"
+gtk-color-scheme = "text_selected: #DEDEDE"
+gtk-color-scheme = "text_insensitive: #808080"
+gtk-color-scheme = "base_normal: #1E1E1E"
+gtk-color-scheme = "base_active: #404040"
+gtk-color-scheme = "base_prelight: #1E1E1E"
+gtk-color-scheme = "base_selected: #404040"
+gtk-color-scheme = "base_insensitive: #1E1E1E"
+# GtkInfobar. The following symbolic color names can by used to customize these colors:
+# ??? Foreground not working, but must be set for background. ???
+gtk-color-scheme = "info_fg_color: #FF00FF"
+gtk-color-scheme = "info_bg_color: #004000"
+gtk-color-scheme = "warning_fg_color: #FF00FF"
+gtk-color-scheme = "warning_bg_color: #804000"
+gtk-color-scheme = "question_fg_color:#FF00FF"
+gtk-color-scheme = "question_bg_color:#004080"
+gtk-color-scheme = "error_fg_color: #FF00FF"
+gtk-color-scheme = "error_bg_color: #800000"
+gtk-color-scheme = "other_fg_color: #FF00FF"
+gtk-color-scheme = "other_bg_color: #000000"
+# GTK settings
+gtk-alternative-button-order = 1
+gtk-alternative-sort-arrows = 1
+gtk-button-images = 0
+gtk-error-bell = 0
+gtk-font-name = "Sans 9"
+gtk-icon-sizes = "gtk-menu=13,13:gtk-small-toolbar=16,16:gtk-large-toolbar=24,24:gtk-dnd=32,32"
+gtk-menu-images = 1
+gtk-toolbar-icon-size = small-toolbar
+style "default" {
+  GtkComboBox::appears-as-list = 1
+  GtkExpander::expander-size = 16
+  GtkScrolledWindow::scrollbar-spacing = 0
+  GtkSeparatorMenuItem::horizontal-padding = 2
+  GtkSpinButton::shadow-type = GTK_SHADOW_NONE
+  GtkTreeView::allow-rules = 0
+  GtkTreeView::expander-size = 16
+  GtkButton::child-displacement-x = 1
+  GtkButton::child-displacement-y = 1
+  GtkCheckButton::indicator-size = 16
+  GtkCheckButton::indicator-spacing = 4
+  GtkEntry::has-frame = 0
+  GtkEntry::shadow-type = GTK_SHADOW_NONE
+  GtkFrame::shadow-type = GTK_SHADOW_NONE
+  GtkPaned::handle-size = 7
+  GtkProgressBar::min-horizontal-bar-height = 19
+  GtkProgressBar::min-vertical-bar-width = 19
+  GtkVScale::slider-length = 13
+  GtkVScale::slider-width = 26
+  GtkHScale::slider-length = 13
+  GtkHScale::slider-width = 26
+  GtkScrollbar::slider-width = 20
+  GtkScrollbar::stepper-size = 20
+  GtkScrollbar::trough-border = 0
+  GtkWidget::link-color = @link_color
+  GtkWidget::visited-link-color = @visited_link_color
+  bg[NORMAL] = @bg_normal
+  bg[ACTIVE] = @bg_active
+  bg[PRELIGHT] = @bg_prelight
+  bg[SELECTED] = @bg_selected
+  bg[INSENSITIVE] = @bg_insensitive
+  fg[NORMAL] = @fg_normal
+  fg[ACTIVE] = @fg_active
+  fg[PRELIGHT] = @fg_prelight
+  fg[SELECTED] = @fg_selected
+  fg[INSENSITIVE] = @fg_insensitive
+  text[NORMAL] = @text_normal
+  text[ACTIVE] = @text_active
+  text[PRELIGHT] = @text_prelight
+  text[SELECTED] = @text_selected
+  text[INSENSITIVE] = @text_insensitive
+  base[NORMAL] = @base_normal
+  base[ACTIVE] = @base_active
+  base[PRELIGHT] = @base_prelight
+  base[SELECTED] = @base_selected
+  base[INSENSITIVE] = @base_insensitive
+  engine "pixmap" {
+    image {
+      function = CHECK
+      shadow = OUT
+      overlay_file = "assets/checkbox.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = CHECK
+      state = INSENSITIVE
+      shadow = IN
+      overlay_file = "assets/checkbox-checked-disabled.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = CHECK
+      shadow = IN
+      overlay_file = "assets/checkbox-checked.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = OPTION
+      shadow = OUT
+      overlay_file = "assets/radio.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = OPTION
+      state = INSENSITIVE
+      shadow = IN
+      overlay_file = "assets/radio-checked-disabled.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = OPTION
+      shadow = IN
+      overlay_file = "assets/radio-checked.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = SHADOW
+      detail = "entry"
+      file = "assets/entry.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = EXPANDER
+      expander_style = COLLAPSED
+      file = "assets/expander-plus.png"
+    }
+    image {
+      function = EXPANDER
+      expander_style = SEMI_COLLAPSED
+      file = "assets/expander-empty.png"
+    }
+    image {
+      function = EXPANDER
+      expander_style = SEMI_EXPANDED
+      file = "assets/expander-empty.png"
+    }
+    image {
+      function = EXPANDER
+      expander_style = EXPANDED
+      file = "assets/expander-minus.png"
+    }
+    image {
+      function = HANDLE
+      detail = "handlebox"
+      overlay_file = "assets/handle-box.png"
+      overlay_border = {10, 0, 1, 1}
+      overlay_stretch = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function = HANDLE
+      overlay_file = "assets/handle-vertical.png"
+      overlay_border = {1, 2, 0, 0}
+      overlay_stretch = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function = HANDLE
+      overlay_file = "assets/handle-horizontal.png"
+      overlay_border = {2, 2, 2, 2}
+      overlay_stretch = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function = RESIZE_GRIP
+      overlay_file = "assets/resize-grip.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      detail = "menu"
+      file = "assets/menu.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      detail = "menuitem"
+      file = "assets/menubar-active.png"
+      border = {1, 1, 1, 1}
+      stretch = TRUE
+    }
+    image {
+      function = ARROW
+      state = INSENSITIVE
+      detail = "menuitem"
+      overlay_file = "assets/arrow-right-disabled.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = ARROW
+      detail = "menuitem"
+      overlay_file = "assets/arrow-right.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = EXTENSION
+      file = "assets/tab-left.png"
+      border = {3, 1, 2, 2}
+      stretch = TRUE
+      gap_side = RIGHT
+    }
+    image {
+      function = EXTENSION
+      gap_side = RIGHT
+    }
+    image {
+      function = EXTENSION
+      file = "assets/tab-right.png"
+      border = {1, 3, 2, 2}
+      stretch = TRUE
+      gap_side = LEFT
+    }
+    image {
+      function = EXTENSION
+      gap_side = LEFT
+    }
+    image {
+      function = EXTENSION
+      file = "assets/tab-top.png"
+      border = {2, 2, 3, 1}
+      stretch = TRUE
+      gap_side = BOTTOM
+    }
+    image {
+      function = EXTENSION
+      gap_side = BOTTOM
+    }
+    image {
+      function = EXTENSION
+      file = "assets/tab-bottom.png"
+      border = {2, 2, 1, 3}
+      stretch = TRUE
+      gap_side = TOP
+    }
+    image {
+      function = EXTENSION
+      gap_side = TOP
+    }
+    image {
+      function = BOX_GAP
+      detail = "notebook"
+      file = "assets/frame-notebook.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+      gap_file = "assets/tab-left-gap.png"
+      gap_border = {1, 1, 2, 2}
+      gap_side = LEFT
+    }
+    image {
+      function = BOX_GAP
+      detail = "notebook"
+      file = "assets/frame-notebook.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+      gap_file = "assets/tab-right-gap.png"
+      gap_border = {1, 1, 2, 2}
+      gap_side = RIGHT
+    }
+    image {
+      function = BOX_GAP
+      detail = "notebook"
+      file = "assets/frame-notebook.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+      gap_file = "assets/tab-top-gap.png"
+      gap_border = {2, 2, 1, 1}
+      gap_side = TOP
+    }
+    image {
+      function = BOX_GAP
+      detail = "notebook"
+      file = "assets/frame-notebook.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+      gap_file = "assets/tab-bottom-gap.png"
+      gap_border = {2, 2, 1, 1}
+      gap_side = BOTTOM
+    }
+    image {
+      function = TAB
+      overlay_file = "assets/arrow-down.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      detail = "bar"
+      file = "assets/progressbar.png"
+      stretch = TRUE
+      border = {0, 0, 0, 0}
+    }
+    image {
+      function = BOX
+      detail = "trough"
+      file = "assets/scrollbar-trough.png"
+      border = {0, 0, 0, 0}
+      stretch = TRUE
+    }
+    image {
+      function = SLIDER
+      detail = "slider"
+      file = "assets/scrollbar-slider.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      state = ACTIVE
+      detail = "hscrollbar"
+      file = "assets/scrollbar-stepper-active.png"
+      border = {1, 1, 1, 1}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      detail = "hscrollbar"
+      file = "assets/scrollbar-slider.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      state = ACTIVE
+      detail = "vscrollbar"
+      file = "assets/scrollbar-stepper-active.png"
+      border = {1, 1, 1, 1}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      detail = "vscrollbar"
+      file = "assets/scrollbar-slider.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      detail = "hscrollbar"
+      overlay_file = "assets/arrow-left-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      detail = "hscrollbar"
+      overlay_file = "assets/arrow-left.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      detail = "hscrollbar"
+      overlay_file = "assets/arrow-right-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = ARROW
+      detail = "hscrollbar"
+      overlay_file = "assets/arrow-right.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      detail = "vscrollbar"
+      overlay_file = "assets/arrow-up-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+    image {
+      function = ARROW
+      detail = "vscrollbar"
+      overlay_file = "assets/arrow-up.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      detail = "vscrollbar"
+      overlay_file = "assets/arrow-down-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+    image {
+      function = ARROW
+      detail = "vscrollbar"
+      overlay_file = "assets/arrow-down.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+    image {
+      function = VLINE
+      file = "assets/separator-vertical.png"
+      border = {1, 1, 0, 0}
+    }
+    image {
+      function = HLINE
+      file = "assets/separator-horizontal.png"
+      border = {0, 0, 1, 1}
+    }
+    image {
+      function = ARROW
+      detail = "spinbutton"
+    }
+    image {
+      function = BOX
+      state = ACTIVE
+      detail = "spinbutton_up"
+      file = "assets/spinbutton-up-active.png"
+      border = {2, 4, 4, 2}
+      stretch = TRUE
+      overlay_file = "assets/arrow-up-active-small.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      state = INSENSITIVE
+      detail = "spinbutton_up"
+      file = "assets/spinbutton-up.png"
+      border = {2, 4, 4, 2}
+      overlay_file = "assets/arrow-up-disabled-small.png"
+      overlay_stretch = FALSE
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      detail = "spinbutton_up"
+      file = "assets/spinbutton-up.png"
+      border = {2, 4, 4, 2}
+      stretch = TRUE
+      overlay_file = "assets/arrow-up-small.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      state = ACTIVE
+      detail = "spinbutton_down"
+      file = "assets/spinbutton-down-active.png"
+      border = {2, 4, 2, 4}
+      stretch = TRUE
+      overlay_file = "assets/arrow-down-active-small.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      state = INSENSITIVE
+      detail = "spinbutton_down"
+      file = "assets/spinbutton-down.png"
+      border = {2, 4, 2, 4}
+      stretch = TRUE
+      overlay_file = "assets/arrow-down-disabled-small.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      detail = "spinbutton_down"
+      file = "assets/spinbutton-down.png"
+      border = {2, 4, 2, 4}
+      stretch = TRUE
+      overlay_file = "assets/arrow-down-small.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = SHADOW
+    }
+  }
+}
+style "button" {
+  engine "pixmap" {
+    image {
+      function = BOX
+      state = ACTIVE
+      file = "assets/button-active.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      file = "assets/button.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+  }
+}
+style "toggle-button" {
+  engine "pixmap" {
+    image {
+      function = BOX
+      state = ACTIVE
+      file = "assets/toggle-button-active.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = BOX
+      state = PRELIGHT
+      shadow = IN
+      file = "assets/toggle-button-active.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+  }
+}
+style "toolbutton" {ythickness = 0}
+style "combobox" {
+  xthickness = 2
+  ythickness = 4
+  GtkWidget::focus-line-width = 0
+  engine "pixmap" {
+    image {
+      function = SHADOW
+      file = "assets/combobox-entry.png"
+      border = {2, 0, 2, 2}
+    }
+    image {
+      function = BOX
+      detail = "button"
+      file = "assets/combobox-button.png"
+      border = {2, 4, 4, 4}
+    }
+    image {
+      function = ARROW
+      overlay_file = "assets/arrow-down.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+  }
+}
+style "combobox-button" {
+  xthickness = 0
+  engine "pixmap" {
+    image {
+      function = BOX
+      state = ACTIVE
+      detail = "button"
+      file = "assets/combobox-button-active.png"
+      border = {2, 4, 4, 4}
+    }
+  }
+}
+style "murrine-textstyle" {
+  engine "murrine" {
+    textstyle = 0
+  }
+}
+style "disable-separator" {
+  xthickness = 0
+  ythickness = 0
+  GtkWidget::wide-separators = 1
+}
+style "entry" {
+  text[SELECTED] = @selected_text_fg_color
+  base[SELECTED] = @selected_text_bg_color
+}
+style "frame" {
+  xthickness = 2
+  ythickness = 2
+  engine "pixmap" {
+    image {
+      function = SHADOW
+      shadow = NONE
+    }
+    image {
+      function = SHADOW
+      file = "assets/frame.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+    image {
+      function = SHADOW_GAP
+      file = "assets/frame-gap.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+      gap_start_file = "assets/frame-gap-start.png"
+      gap_end_file = "assets/frame-gap-end.png"
+      gap_start_border = {2, 0, 0, 0}
+      gap_end_border = {0, 2, 0, 0}
+    }
+  }
+}
+style "filechooser-toolbar" {
+  engine "pixmap" {
+    image {
+      function = BOX
+      file = "assets/filechooser-toolbar.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+  }
+}
+style "linkbutton" {
+  engine "pixmap" {
+    image {
+      function = BOX
+    }
+  }
+}
+style "menuitem" {
+  engine "pixmap" {
+    image {
+      function = BOX
+      detail = "menuitem"
+      overlay_file = "assets/menuitem-prelight.png"
+    }
+    image {
+      function = CHECK
+      shadow = OUT
+      overlay_file = "assets/menu-checkbox-unchecked.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = CHECK
+      state = INSENSITIVE
+      shadow = IN
+      overlay_file = "assets/menu-checkbox-checked-disabled.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = CHECK
+      shadow = IN
+      overlay_file = "assets/menu-checkbox-checked.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = OPTION
+      shadow = OUT
+      overlay_file = "assets/menu-radio-unchecked.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = OPTION
+      state = INSENSITIVE
+      shadow = IN
+      overlay_file = "assets/menu-radio-checked-disabled.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = OPTION
+      shadow = IN
+      overlay_file = "assets/menu-radio-checked.png"
+      overlay_stretch = FALSE
+    }
+  }
+}
+style "progressbar" {
+  engine "pixmap" {
+    image {
+      function = BOX
+      detail = "trough"
+      file = "assets/progressbar-trough.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+  }
+}
+style "scale" {
+  engine "pixmap" {
+    image {
+      function = BOX
+      detail = "trough"
+      file = "assets/scale-trough-horizontal.png"
+      border = {2, 2, 11, 14}
+      stretch = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function = BOX
+      detail = "trough"
+      file = "assets/scale-trough-vertical.png"
+      border = {14, 11, 2, 2}
+      stretch = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function = SLIDER
+      file = "assets/null.png"
+      stretch = TRUE
+      overlay_file = "assets/scale-slider-horizontal.png"
+      overlay_stretch = FALSE
+      orientation = HORIZONTAL
+    }
+    image {
+      function = SLIDER
+      file = "assets/null.png"
+      stretch = TRUE
+      overlay_file = "assets/scale-slider-vertical.png"
+      overlay_stretch = FALSE
+      orientation = VERTICAL
+    }
+  }
+}
+style "scrolledwindow" {
+  engine "pixmap" {
+    image {
+      function = SHADOW
+      detail = "scrolled_window"
+      file = "assets/scrolled-window-frame.png"
+      border = {2, 2, 2, 2}
+      stretch = TRUE
+    }
+  }
+}
+style "spinbutton" {
+  xthickness = 6
+  ythickness = 4
+}
+binding "ms-windows-tree-view" {
+  bind "Right" {"expand-collapse-cursor-row" (1,1,0)}
+  bind "Left"  {"expand-collapse-cursor-row" (1,0,0)}
+}
+class "GtkTreeView" binding "ms-windows-tree-view"
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkFrame" style "frame"
+class "GtkEntry" style "entry"
+class "GtkProgressBar" style "progressbar"
+class "GtkScale" style "scale"
+class "GtkScrolledWindow" style "scrolledwindow"
+class "GtkLinkButton" style "linkbutton"
+widget_class "*<GtkMenu>.<GtkMenuItem>*" style "menuitem"
+widget_class "*<GtkSpinButton>*" style "spinbutton"
+widget_class "*<GtkToggleButton>*" style "toggle-button"
+widget_class "*<GtkComboBox>*" style "combobox"
+widget_class "*<GtkComboBox>*<GtkButton>*" style "combobox-button"
+widget_class "*<GtkFileChooserDefault>*<GtkToolbar>" style "filechooser-toolbar"
+widget_class "*<GtkComboBox>.<GtkButton>*<GtkSeparator>" style "disable-separator"
+widget_class "*<GtkFontButton>*<GtkSeparator>" style "disable-separator"
+widget_class "*<GtkFileChooserButton>*<GtkSeparator>" style "disable-separator"
+widget_class "*<GtkLabel>" style "murrine-textstyle"
+widget_class "*<GtkCellView>" style "murrine-textstyle"
+widget_class "*Tool*Button*" style "toolbutton"
+widget_class "*Tool*GtkToggleButton" style "toolbutton"
