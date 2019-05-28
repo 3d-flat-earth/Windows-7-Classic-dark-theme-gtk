@@ -1,0 +1,3 @@
+/** PulseAudio Volume Control (pavucontrol) **/
+notebook > stack > box > scrolledwindow > viewport > box > box > box > box > progressbar > trough > progress {background-image: repeating-linear-gradient(90deg,@levelbar_block, @levelbar_block 4px,@bg_normal, @bg_normal 5px);}
+notebook > stack > box > scrolledwindow > viewport > box > box > box > box > box > scale + label {min-width: 120px;}
