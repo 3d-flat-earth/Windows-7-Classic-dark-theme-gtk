@@ -110,23 +110,23 @@ menu > arrow.top {background: url("assets/arrow-up.png") center no-repeat;}
 menu > arrow.bottom {margin-bottom: -6px; background: url("assets/arrow-down.png") center no-repeat;}
 menu > arrow:disabled {min-height: 0px; min-width: 0px; padding: 0px; background-image: none;}
 popover.background {padding: 2px; background-color: @bg_normal; box-shadow: 2px 2px @rgb142 inset, -2px -2px @rgb19 inset, 1px 1px @rgb30 inset, -1px -1px @rgb64 inset;}
-popover.menu modelbutton {margin: 0px -10px; outline-style: none; box-shadow: none;}
-popover.menu modelbutton:hover {color: @fg_selected; background-color: @bg_selected;}
-popover.menu modelbutton label {margin: 0px 10px; padding: 4px 16px 4px 16px;}
-popover.menu box box modelbutton:first-child {margin-top: -10px;}
-popover.menu box box modelbutton:only-child {margin: -10px 0px;}
-popover.menu box box modelbutton:last-child {margin-bottom: -10px;}
-popover.menu box separator.horizontal + box > modelbutton:first-child {margin-top: 0px;}
-popover.menu box separator.horizontal + box > modelbutton:only-child {margin: 0px 0px;}
-popover.menu box separator.horizontal + box > modelbutton:last-child {margin-bottom: 0px;}
-popover.menu box:first-child:not(:only-child) > box > modelbutton:last-child {margin-bottom: 0px;}
-popover.menu modelbutton arrow {min-width: 10px; min-height: 10px; -gtk-icon-source: none;}
-popover.menu modelbutton check {margin: 0px 4px;}
-popover.menu modelbutton radio {margin: 0px 4px;}
-popover.menu modelbutton arrow.left {margin: 0px -8px 0px 8px; background-image: url("assets/arrow-left.png");}
-popover.menu modelbutton arrow.right {margin: 0px 8px 0px -8px; background-image: url("assets/arrow-right.png");}
-popover.menu modelbutton arrow.left + box label {margin-left: -32px; margin-right: 32px;}
-popover.menu stack > box > modelbutton:first-child {margin-top: -10px; margin-bottom: 10px;}
+popover modelbutton {margin: 0px -10px; outline-style: none; box-shadow: none;}
+popover modelbutton:hover {color: @fg_selected; background-color: @bg_selected;}
+popover modelbutton label {margin: 0px 10px; padding: 4px 16px 4px 16px;}
+popover box box modelbutton:first-child {margin-top: -10px;}
+popover box box modelbutton:only-child {margin: -10px 0px;}
+popover box box modelbutton:last-child {margin-bottom: -10px;}
+popover box separator.horizontal + box > modelbutton:first-child {margin-top: 0px;}
+popover box separator.horizontal + box > modelbutton:only-child {margin: 0px 0px;}
+popover box separator.horizontal + box > modelbutton:last-child {margin-bottom: 0px;}
+popover box:first-child:not(:only-child) > box > modelbutton:last-child {margin-bottom: 0px;}
+popover modelbutton arrow {min-width: 10px; min-height: 10px; -gtk-icon-source: none;}
+popover modelbutton check {margin: 0px 4px;}
+popover modelbutton radio {margin: 0px 4px;}
+popover modelbutton arrow.left {margin: 0px -8px 0px 8px; background-image: url("assets/arrow-left.png");}
+popover modelbutton arrow.right {margin: 0px 8px 0px -8px; background-image: url("assets/arrow-right.png");}
+popover modelbutton arrow.left + box label {margin-left: -32px; margin-right: 32px;}
+popover stack > box > modelbutton:first-child {margin-top: -10px; margin-bottom: 10px;}
 notebook > header > tabs > tab {border-style: solid; border-width: 2px; background-clip: padding-box; background-color: @bg_normal;}
 notebook > header > tabs > tab > label {padding: 2px 4px;}
 notebook > header.top > tabs {margin: 0px 0px -2px 2px; padding: 2px 0px 0px 0px;}
@@ -224,7 +224,7 @@ toolbar.osd button:focus, toolbar.osd button:hover {border: 1px solid @rgb64; co
 toolbar.osd button:active {border-color: @rgb96;}
 tooltip.background {border: 1px solid @rgb96;}
 revealer > box {padding: 2px;}
-modelbutton label, row {padding: 4px 4px;}
+row {padding: 4px;}
 .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1f76e1), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.834353)), to(transparent)); background-size: 6px 6px, 6px 6px; background-repeat: no-repeat; background-position: right 3px, right 2px;}
 .stack-switcher > button.needs-attention:active > label, .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label, .stack-switcher > button.needs-attention:checked > image {background-image: none;}
 @define-color rgb0 #000000;
