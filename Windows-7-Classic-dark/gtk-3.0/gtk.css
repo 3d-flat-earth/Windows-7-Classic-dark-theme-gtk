@@ -113,9 +113,9 @@ popover.background {padding: 2px; background-color: @bg_normal; box-shadow: 2px 
 popover modelbutton {margin: 0px -10px; outline-style: none; box-shadow: none;}
 popover modelbutton:hover {color: @fg_selected; background-color: @bg_selected;}
 popover modelbutton label {margin: 0px 10px; padding: 4px 16px 4px 16px;}
-popover box box modelbutton:first-child {margin-top: -10px;}
-popover box box modelbutton:only-child {margin: -10px 0px;}
-popover box box modelbutton:last-child {margin-bottom: -10px;}
+popover box modelbutton:first-child {margin-top: -10px;}
+popover box modelbutton:only-child {margin: -10px 0px;}
+popover box modelbutton:last-child {margin-bottom: -10px;}
 popover box separator.horizontal + box > modelbutton:first-child {margin-top: 0px;}
 popover box separator.horizontal + box > modelbutton:only-child {margin: 0px 0px;}
 popover box separator.horizontal + box > modelbutton:last-child {margin-bottom: 0px;}
