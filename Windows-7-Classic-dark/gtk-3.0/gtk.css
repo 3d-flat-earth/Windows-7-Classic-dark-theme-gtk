@@ -224,6 +224,7 @@ toolbar.osd button:focus, toolbar.osd button:hover {border: 1px solid @rgb64; co
 toolbar.osd button:active {border-color: @rgb96;}
 tooltip.background {border: 1px solid @rgb96;}
 revealer > box {padding: 2px;}
+modelbutton label, row {padding: 4px 4px;}
 .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1f76e1), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.834353)), to(transparent)); background-size: 6px 6px, 6px 6px; background-repeat: no-repeat; background-position: right 3px, right 2px;}
 .stack-switcher > button.needs-attention:active > label, .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label, .stack-switcher > button.needs-attention:checked > image {background-image: none;}
 @define-color rgb0 #000000;
