@@ -212,6 +212,21 @@ style "default" {
       function = ARROW
       state = INSENSITIVE
       detail = "menuitem"
+      overlay_file = "assets/arrow-left-disabled.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      detail = "menuitem"
+      overlay_file = "assets/arrow-left.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      state = INSENSITIVE
+      detail = "menuitem"
       overlay_file = "assets/arrow-right-disabled.png"
       overlay_stretch = FALSE
       arrow_direction = RIGHT
@@ -219,6 +234,86 @@ style "default" {
     image {
       function = ARROW
       detail = "menuitem"
+      overlay_file = "assets/arrow-right.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      overlay_file = "assets/arrow-up-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+    image {
+      function = ARROW
+      state = INSENSITIVE
+      overlay_file = "assets/arrow-up-disabled.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+    image {
+      function = ARROW
+      overlay_file = "assets/arrow-up.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      overlay_file = "assets/arrow-down-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+    image {
+      function = ARROW
+      state = INSENSITIVE
+      overlay_file = "assets/arrow-down-disabled.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+    image {
+      function = ARROW
+      overlay_file = "assets/arrow-down.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      overlay_file = "assets/arrow-left-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      state = INSENSITIVE
+      overlay_file = "assets/arrow-left-disabled.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      overlay_file = "assets/arrow-left.png"
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+    image {
+      function = ARROW
+      state = ACTIVE
+      overlay_file = "assets/arrow-right-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = ARROW
+      state = INSENSITIVE
+      overlay_file = "assets/arrow-right-disabled.png"
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+    image {
+      function = ARROW
       overlay_file = "assets/arrow-right.png"
       overlay_stretch = FALSE
       arrow_direction = RIGHT
