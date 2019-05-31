@@ -713,7 +713,7 @@ style "filechooser-toolbar" {
     image {
       function = BOX
       file = "assets/filechooser-toolbar.png"
-      border = {2, 2, 2, 2}
+      border = {2, 2, 0, 2}
       stretch = TRUE
     }
   }
