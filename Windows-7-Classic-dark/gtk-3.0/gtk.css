@@ -73,7 +73,7 @@ button label, button.link:active label, button.link:visited:active label {paddin
 menubar > menuitem > label {padding: 2px 6px;}
 stackswitcher .text-button.radio label, stackswitcher .text-button.radio:checked:active label {padding: 2px 10px;}
 button.link label, link {color: @link_color; text-decoration-line: underline;}
-button.link:visited label, link {color: @visited_link_color;}
+button.link:visited label, link:visited {color: @visited_link_color;}
 button:active label {padding: 3px 3px 1px 5px}
 button label:disabled, menuitem label:disabled {color: @rgb19; text-shadow: 1px 1px @rgb160;}
 spinbutton button:disabled, .image-button:disabled, .path-bar button.slider-button image:disabled {color: @fg_insensitive;}
